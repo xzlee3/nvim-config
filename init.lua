@@ -90,9 +90,9 @@ vim.keymap.set('n', '<C-b>', ':NvimTreeToggle<CR>', { noremap = true, silent = t
 vim.keymap.set('n', '<F8>', ':TagbarToggle<CR>')
 
 -- FZF
-vim.keymap.set('n', '\\fc', ':Rg<CR>', { noremap = true, silent = true })
-vim.keymap.set('n', '\\ff', ':GFiles<CR>', { noremap = true, silent = true })
-vim.keymap.set('n', '\\fr', ':GrugFar<CR>', { noremap = true, silent = true })
+vim.keymap.set('n', '<leader>fc', ':Rg<CR>', { noremap = true, silent = true })
+vim.keymap.set('n', '<leader>ff', ':GFiles<CR>', { noremap = true, silent = true })
+vim.keymap.set('n', '<leader>fr', ':GrugFar<CR>', { noremap = true, silent = true })
 
 -- Diagnostic navigation
 vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, { desc = 'Show diagnostic' })
