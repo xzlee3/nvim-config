@@ -122,7 +122,7 @@ vim.api.nvim_create_autocmd('BufWritePre', {
     '*.command',
     '*.inc',
     '*.lua',
-    "*.py",
+    '*.py',
     '*.sh',
     'PKGBUILD'
   },
