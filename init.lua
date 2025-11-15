@@ -122,6 +122,7 @@ vim.api.nvim_create_autocmd('BufWritePre', {
     '*.command',
     '*.inc',
     '*.lua',
+    '*.py',
     '*.sh',
     'PKGBUILD'
   },
@@ -182,3 +183,8 @@ vim.lsp.config('lua_ls', {
     }
   }
 })
+
+-- Python
+vim.lsp.enable('basedpyright')
+vim.lsp.enable('ruff')
+
