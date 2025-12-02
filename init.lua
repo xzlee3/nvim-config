@@ -123,6 +123,7 @@ vim.api.nvim_create_autocmd('BufWritePre', {
     '*.inc',
     '*.lua',
     '*.py',
+    '*.qml',
     '*.sh',
     'PKGBUILD'
   },
@@ -188,3 +189,8 @@ vim.lsp.config('lua_ls', {
 vim.lsp.enable('basedpyright')
 vim.lsp.enable('ruff')
 
+-- QML
+vim.lsp.enable('qmlls')
+vim.lsp.config('qmlls', {
+  cmd = { 'qmlls6' }
+})
