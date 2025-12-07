@@ -122,6 +122,7 @@ vim.api.nvim_create_autocmd('BufWritePre', {
     '*.command',
     '*.inc',
     '*.lua',
+    '*.nix',
     '*.py',
     '*.qml',
     '*.sh',
@@ -183,6 +184,18 @@ vim.lsp.config('lua_ls', {
       }
     }
   }
+})
+
+-- Nix
+vim.lsp.enable('nixd')
+vim.lsp.config('nixd', {
+  settings = {
+    nixd = {
+      formatting = {
+        command = { "nixfmt" },
+      },
+    },
+  },
 })
 
 -- Python
