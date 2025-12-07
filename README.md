@@ -20,7 +20,9 @@ Copy `init.lua` to `~/.config/nvim`.
 | -------- | ------------------------------------------ |
 | Bash     | [BashLS][BashLS]                           |
 | Lua      | [LuaLS][LuaLS]                             |
+| Nix      | [nixd][nixd]                               |
 | Python   | [basedpyright][basedpyright], [ruff][ruff] |
+| QML      | [qmlls][qmlls]                             |
 
 <!-- Links -->
 
@@ -32,3 +34,5 @@ Copy `init.lua` to `~/.config/nvim`.
 [ripgrep]: https://github.com/BurntSushi/ripgrep
 [ruff]: https://docs.astral.sh/ruff/
 [ctags]: https://ctags.io/
+[qmlls]: https://doc.qt.io/qt-6/qtqml-tooling-qmlls.html
+[nixd]: https://github.com/nix-community/nixd 
